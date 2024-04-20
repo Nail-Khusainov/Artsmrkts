@@ -58,6 +58,20 @@
     color: white;
 }
 
+.registration-btn:hover {
+    opacity: 0.8;
+}
+
+
+.registration-btn-disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.registration-btn-disabled:hover  {
+    opacity: 0.3;
+}
+
 .registration__error-container {
     display: flex;
     height: 20px;

@@ -76,7 +76,9 @@ const RegistrationForm = () => {
                 <div className='registration__error-container'>
                     {!isFullnameValid && fullname.trim() !== '' && <p className="registration__error-message">Invalid full name</p>}
                 </div>
-                <button className="registration-btn" type="submit" disabled={!isFormValid}>Register</button>
+                <button className={`registration-btn ${isFormValid ? '' : 'registration-btn-disabled'}`} type="submit" disabled={!isFormValid}>
+                    Register
+                </button>
                 <p className='registration__text'>Or register via:</p>
                 <div className="registration__links">
                     <a
@@ -102,7 +104,7 @@ const RegistrationForm = () => {
                 <NavLink to="/singin" className='registration__login-link'> Log in</NavLink>
                 </p>
                 <p className='registration__caption'>By registreting you agree to our
-                <NavLink to="/singin" className='registration__terms-link'> privacy policy</NavLink>
+                <NavLink to="/policy" className='registration__terms-link'> privacy policy</NavLink>
                 </p>
             </form>
         </div>
