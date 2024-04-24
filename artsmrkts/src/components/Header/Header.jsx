@@ -12,25 +12,25 @@ function Header() {
                 <BurgerMenu/>
                 <div className="header__nav-links">
                     <NavLink to="/aboutus" className="header__nav-link">
-                        About Us
+                        О нас
                     </NavLink>
-                    <NavLink to="/trading" className="header__nav-link">
-                        Forex Trading
+                    <NavLink to="/projects" className="header__nav-link">
+                        Проекты
                     </NavLink>
-                    <NavLink to="/tools" className="header__nav-link">
-                        Tools
+                    <NavLink to="/news" className="header__nav-link">
+                        Новости
                     </NavLink>
-                    <NavLink to="/partner" className="header__nav-link">
-                        Partner With Us
+                    <NavLink to="/faq" className="header__nav-link">
+                        FAQ
+                    </NavLink>
+                    <NavLink to="/contacts" className="header__nav-link">
+                        Контакты
                     </NavLink>
                 </div>
             </nav>
 
             <div className="header__authbar">
-                <button className="header__lang-btn"/>
-                <NavLink to="/signup" className="header__btn header__btn-reg">Register</NavLink>
-                <NavLink to="/demo" className='header__btn header__btn-demo'>Demo Account</NavLink>
-                <NavLink to="/singin" className='header__auth-link'>Login</NavLink>
+                <NavLink to="/contacts" className='header__btn'>Связаться с нами</NavLink>
             </div>
         </div>
     );
